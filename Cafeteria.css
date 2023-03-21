@@ -1,18 +1,23 @@
 
 
 :root{
-    --color: #ffffff; /* set the variable value */
+    --color: #ff2929; /* set the variable value */
    --output-color: var(--color); /* initialize the output color variable */
 }
 
 .wrapper{
-    border: 0px black solid;
-    width: 80%;
-    height: 250px;
+    border: 2px black solid;
+    width: 75%;
+    height: 2300px;
     margin: auto;
+    background-image:url("https://media.istockphoto.com/id/517253083/de/vektor/cork-hintergrund-kork-board-struktur.jpg?s=612x612&w=0&k=20&c=HQlKJ4-oOBnJBCcmYp2gGQEejKZfhVKqc_mNnCRdyAw=");
+    background-repeat: repeat;
 }
 
-  
+  .colorPicker{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
   input[type="color"] {
     /* use the variable value as the initial color */
     color: var(--color);
@@ -43,5 +48,127 @@
     width: auto;
     height: 2500px;
     background-color: var(--output-color);
-    border: 2px black solid;
+    border: 0px black solid;
+}
+
+.Ende{
+  color: white;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+
+.Zettel{
+  height: 2300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.zettel1{
+  border: 1px solid black;
+  height: 20px;
+  width: 50%;
+  background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  height: 10%;
+  transform: rotate(10deg);
+  display: flex;
+  justify-content: center;
+}
+.zettel2{
+  border: 1px solid black;
+  background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  height: 10%;
+  width: 50%;
+  transform: rotate(-5deg);
+  display: flex;
+  justify-content: center;
+
+}
+.zettel3{
+  border: 1px solid black;
+  background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  height: 10%;
+  width: 50%;
+  transform: rotate(-2deg);
+  display: flex;
+  justify-content: center;
+}
+.zettel4{
+  border: 1px solid black;
+  background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  height: 10%;
+  width: 50%;
+  transform: rotate(7deg);
+  display: flex;
+  justify-content: center;
+}
+.circle{
+  width: 5%;
+  height: 4vh;
+  border-radius: 50%;
+  margin: 2%;
+  background-color: var(--output-color);
+  display: flex;
+  justify-content: center;
+  border: black solid 1px;
+}
+
+
+
+
+
+
+.menu-btn {
+  font-size: 150%;
+  display: block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu {
+  position: absolute;
+  top:65px;
+  left: -200px;
+  width: 150px;
+  background-color: #eee;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease-in-out;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu.show {
+  left: 0;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #ccc;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #ccc;
 }

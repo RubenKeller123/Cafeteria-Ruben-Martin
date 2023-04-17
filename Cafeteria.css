@@ -1,14 +1,27 @@
 
 
 :root{
-    --color: #ff2929; /* set the variable value */
+    --color: #9FDEFE; /* set the variable value */
    --output-color: var(--color); /* initialize the output color variable */
 }
 
+#Home {
+  display: block;
+}
+
+#Macher{
+  display: none;
+}
+
+#ContactUs{
+  display: none;
+}
+
+
 .wrapper{
     border: 2px black solid;
-    width: 75%;
-    height: 2300px;
+    width: 85%;
+    height: 2000px;
     margin: auto;
     background-image:url("https://media.istockphoto.com/id/517253083/de/vektor/cork-hintergrund-kork-board-struktur.jpg?s=612x612&w=0&k=20&c=HQlKJ4-oOBnJBCcmYp2gGQEejKZfhVKqc_mNnCRdyAw=");
     background-repeat: repeat;
@@ -45,69 +58,107 @@
   }
 
   .background{
-    width: auto;
-    height: 2500px;
+    width: 100%;
+    height: 2200px;
     background-color: var(--output-color);
     border: 0px black solid;
 }
 
-.Ende{
+.endeRuben{
+  font-size: 16px;
   color: white;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;
   margin-top: 20px;
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
+.endeMartin{
+  font-size: 16px;
+  margin-left: 3px;
+  color: white;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 20px;
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  background-image: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8c00ff);
+}
+
+.ende{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 .Zettel{
-  height: 2300px;
+  height: 2000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #333;
 }
 
 .zettel1{
   border: 1px solid black;
-  height: 20px;
-  width: 50%;
+  width: 75%;
   background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-  height: 10%;
+  height: 15%;
   transform: rotate(10deg);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
 }
 .zettel2{
   border: 1px solid black;
   background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-  height: 10%;
-  width: 50%;
+  height: 20%;
+  width: 75%;
   transform: rotate(-5deg);
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5%;
 }
+
+
 .zettel3{
   border: 1px solid black;
   background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-  height: 10%;
-  width: 50%;
+  height: 17%;
+  width: 75%;
   transform: rotate(-2deg);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5%;
 }
 .zettel4{
   border: 1px solid black;
   background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-  height: 10%;
-  width: 50%;
+  height: 15%;
+  width: 75%;
   transform: rotate(7deg);
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5%;;
 }
 .circle{
-  width: 5%;
-  height: 4vh;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin: 2%;
   background-color: var(--output-color);
@@ -115,11 +166,15 @@
   justify-content: center;
   border: black solid 1px;
 }
-
-
-
-
-
+.circle2{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--output-color);
+  display: flex;
+  justify-content: center;
+  border: black solid 1px;
+}
 
 .menu-btn {
   font-size: 150%;
@@ -131,17 +186,21 @@
   border-radius: 4px;
   cursor: pointer;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: fixed;
+  z-index: 1;
 }
 
 .menu {
-  position: absolute;
+  margin-top: 10px;
+  position: fixed;
   top:65px;
   left: -200px;
   width: 150px;
-  background-color: #eee;
+  background-color: #fff;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: left 0.3s ease-in-out;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 1;
 }
 
 .menu.show {
@@ -169,6 +228,199 @@
   text-decoration: none;
 }
 
-.menu a:hover {
-  background-color: #ccc;
+#button1{
+  width: 100%;
+  height: 100%;
+  border: none;
 }
+#buttonBack{
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  font-weight: bold;
+  position: fixed;
+  background-color: #333;
+  color: #fff;
+  bottom: 0;
+  margin: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  z-index: 1;
+
+}
+.pfeil{
+  margin-top: 7px;
+  margin-left: -2px ;
+}
+
+
+.Macher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MacherPinwand{
+  width: 85%;
+  height: 1800px;
+  background-image:url("https://media.istockphoto.com/id/517253083/de/vektor/cork-hintergrund-kork-board-struktur.jpg?s=612x612&w=0&k=20&c=HQlKJ4-oOBnJBCcmYp2gGQEejKZfhVKqc_mNnCRdyAw=");
+  background-repeat: repeat;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  border: black solid 2px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.beideButtons{
+  Border: none;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #333;
+  font-size: 100%;
+  background-color: #fff;
+}
+.ZettelRuben{
+  border: 1px solid black;
+  width: 75%;
+  background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  height: 30%;
+  transform: rotate(5deg);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #333;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.ZettelMartin{
+  border: 1px solid black;
+  width: 75%;
+  background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  height: 30%;
+  transform: rotate(-7deg);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #333;
+  padding-bottom: 5%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Croissant{
+  width: auto;
+  height: 50%;
+  margin-left: -18%;
+}
+.Schnitzelsemmel{
+  width:auto;
+  height: 50%;
+}
+.Fruchtsaft{
+  width: auto;
+  height: 50%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+
+#closeBtn {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  font-size: 10px;
+  top: 10px;
+  right: 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.error{
+  width: 50px;
+  height: auto;
+}
+.popup{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.ContactUs{
+  display: flex;
+  text-align: center;
+  width:75%;
+  margin-left: 12.5%;
+  height: 500px;
+  border: black solid 2px;
+  background-image:url("https://media.istockphoto.com/id/517253083/de/vektor/cork-hintergrund-kork-board-struktur.jpg?s=612x612&w=0&k=20&c=HQlKJ4-oOBnJBCcmYp2gGQEejKZfhVKqc_mNnCRdyAw=");
+}
+.Difficulties{
+  margin-top: 8px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 200%;
+  background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  width: 80%;
+  height: 25%;
+  margin: auto;
+  border: black solid 1px;
+  margin-top: 5%;
+}
+
+.Email{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 250%;
+  background-image: url("https://images.unsplash.com/photo-1629968417850-3505f5180761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  width: 80%;
+  height: 20%;
+  margin:auto;
+  margin-top: 15%;
+  border: black solid 1px;
+}
+
+
+@media screen and (min-width: 700px) {
+  .zettel1{
+    width: 60%;
+  }
+  .zettel2{
+    width: 60%;
+  }
+  .zettel3{
+    width: 60%;
+  }
+  .zettel4{
+    width: 60%;
+  }
+}
+
+
+
+
